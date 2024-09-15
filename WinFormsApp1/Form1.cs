@@ -1,3 +1,5 @@
+using System.Globalization;
+
 namespace WinFormsApp1
 {
     public partial class Form1 : Form
@@ -8,6 +10,9 @@ namespace WinFormsApp1
         }
         int space = 0;
         int dashInsertionFlag = 0;
+        string template = "U+d U+.U+.";
+        int i = 0;
+        int num = 0;
 
         //private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
         //{
@@ -26,8 +31,40 @@ namespace WinFormsApp1
         //    }
         //}
 
+        private void handleUpLetter(KeyPressEventArgs e) {
+        }
+
+        private void handleLowLetter(KeyPressEventArgs e) {
+        }
+
         private void textBox1_KeyPress(object sender, KeyPressEventArgs e)
-        {
+        {   
+            // if (template[i] == 'U'){
+            //     num = 0;
+            //     if (Char.IsLetter(e.KeyChar))
+            //         if (num < template[i+1])
+            //         {
+            //             e.KeyChar = Char.ToUpper(e.KeyChar);
+            //             num++;
+            //         }
+            //         else
+            //         {
+
+            //         }
+            //     else e.Handled = true;
+            //     if (template[i+1] == '+')
+            //         i++;
+            // }
+            // else if (template[i] == 'l'){
+
+            // }
+            // else if (template[i] == ' '){
+                
+            // }
+            // else if (template[i] == '.'){
+                
+            // }
+
             if (Char.IsLetter(e.KeyChar) || (e.KeyChar == ' ') || (e.KeyChar == '-'))
                 if (textBox1.SelectionStart == 0)
                     if (e.KeyChar == ' ' || e.KeyChar == '-') e.Handled = true;
