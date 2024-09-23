@@ -7,7 +7,7 @@ namespace WinFormsApp1
             InitializeComponent();
         }
         Boolean dotFlag = false;
-        string template = ""; // ����� ��������� ���� ����� �� �������� ������: U1l U1.U1.
+        string template = ""; // Example U1l U1.U1.
         int i = 0;
         int num = 0;
 
@@ -72,6 +72,7 @@ namespace WinFormsApp1
             {
                 template = textBox1.Text;
                 textBox1.Text = string.Empty;
+                textBox2.Text = template + Environment.NewLine;
             }
             if (dotFlag)
             {
