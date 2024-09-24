@@ -49,6 +49,7 @@ namespace WinFormsApp1
                 textBox2.Text += textBox1.Text + Environment.NewLine;
                 textBox1.Text = string.Empty;
                 space = 0;
+                dot = true;
             }
             if (space == 2 && dot)
             {
